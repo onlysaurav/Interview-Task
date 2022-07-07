@@ -9,7 +9,8 @@ const userSchema = new mongoose.Schema({
     parent_user:{type:String},
     children_user:{type:String},
     password:{type:String,required:true},
-    children_user:{type:Boolean}
+    children_user:{type:Boolean},
+    total_children:{type:Number}
 
 })
 const UserModel = new mongoose.model("user", userSchema)
